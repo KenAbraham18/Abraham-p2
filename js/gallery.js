@@ -127,6 +127,16 @@ window.requestAnimFrame = (function(){
   mRequest.open("GET", mUrl, true)
   mRequest.send();
   }
-  
+
+  $(document).ready(function (){
+    $('img.moreIndicator').click(function (){
+      if ($(this).hasClass('rot90')) {
+        $(this).removeClass('rot90').addClass('rot270');
+    } else {
+      $(this).removeClass('rot270').addClass('rot90');
+    }
+    $('div.details').fadeToggle();
+  });
+  });
 
   /*call to access the information in the JSON file. */
