@@ -32,7 +32,7 @@ body {
 	position: relative;
 	z-index: 3;
 	opacity: .8;
-	top: 0px;
+	bottom: 0px;
 	translate: 300px 0px;
 }
 
@@ -62,7 +62,6 @@ body {
 #nextPhoto {
 	height: 42px;
 	width: 42px;
-	padding-left: 560px;
 }
 
 .details p {
@@ -78,28 +77,20 @@ body {
 Make it animate nicely. You'll need CSS3 for this*/
 .rot90 {
 	transform: rotate(90deg);
-	/* Firefox */
-	-moz-transition: all 1s ease;
-	/* WebKit */
-	-webkit-transition: all 1s ease;
-	/* Opera */
-	-o-transition: all 1s ease;
-	/* Standard */
 	transition: all 1s ease;
 }
 
 /*Add CSS styles to rotate the element 180deg
 Make it animate nicely. You'll need CSS3 for this*/
 .rot180 {
-	transform: rotate(180deg); 
+	transform: rotate(180deg) ;
+
 }
 
 /*Add CSS styles to rotate the element 270deg
 Make it animate nicely. You'll need CSS3 for this*/
 .rot270 {
-	transform: rotate(270deg);
-	transition: ease 1s;
-}
-.rightSide{
-translate: 550px 0px;
+	transform: rotate(270deg) ;
+	transition: all 1s ease;
+
 }
